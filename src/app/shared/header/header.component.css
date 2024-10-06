@@ -1,5 +1,33 @@
-.header{
+.header {
     color: #F4EEEF;
-    background-color: #54148D ;
-    padding-top: 5%;
+    background-color: #54148D;
+}
+
+.nav-link, .navbar-brand {
+    color: #F4EEEF;
+}
+
+.nav-link:hover {
+    color: #F4EEEF; /* Color en hover */
+    background-color: #5c1d8e; /* Color de fondo en hover */
+    transition: background-color 0.3s ease-in-out; /* Transición suave */
+}
+
+.navbar-toggler {
+    border: none; /* Elimina el borde */
+    background-color: transparent; /* Fondo transparente */
+    padding: 6px; /* Espaciado alrededor del botón */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(244, 238, 239)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); /* Icono del botón */
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); /* Cambia el color y la opacidad del borde */
 }
