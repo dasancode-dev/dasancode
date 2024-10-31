@@ -1,0 +1,80 @@
+<section lass="flex flex-col w-1/2 h-auto items-center justify-center">
+  <h2 class="text-xl font-bold mb-4">
+    Contactanos
+  </h2>
+  <form
+    action=""
+    class="flex flex-col w-1/2 items-start ml-32 gap-4"
+    [formGroup]="contactForm"
+    (ngSubmit)="handleSubmit()"
+  >
+    <label
+      htmlFor="fullName"
+      class="flex flex-col gap-2 w-3/4"
+    >
+      Nombre Completo
+      <input
+        name="fullName"
+        type="text"
+        class="w-full h-10 border rounded-xl px-4"
+        formControlName="name"
+      />
+    </label>
+    <label
+      htmlFor="email"
+      class="flex flex-col gap-2 w-3/4"
+    >
+      Correo electrónico
+      <input
+        name="email"
+        type="email"
+        class="w-full h-10 border rounded-xl px-4"
+        formControlName="email"
+      />
+    </label>
+    <label
+      htmlFor="company"
+      class="flex flex-col gap-2 w-3/4"
+    >
+      Empresa
+      <input
+        name="company"
+        type="text"
+        class="w-full h-10 border rounded-xl px-4"
+        formControlName="company"
+      />
+    </label>
+    <label
+      htmlFor="services"
+      class="flex flex-col gap-2 w-3/4"
+    >
+      ¿Qué servicios buscas?
+      <input
+        name="services"
+        type="text"
+        class="w-full h-10 border rounded-xl px-4"
+        formControlName="services"
+      />
+    </label>
+    <label
+      htmlFor="details"
+      class="flex flex-col gap-2 w-3/4"
+    >
+      Mensaje
+      <textarea
+        name="details"
+        type="text"
+        class="w-full border rounded-xl px-4 py-2"
+        rows=5
+        cols=40
+        formControlName="details"
+      ></textarea>
+    </label>
+    <button
+      class='flex flex-col justify-center items-center gap-2 w-3/4 bg-primary-purple-light h-10 rounded-xl px-4 text-white text-semibold'
+      [disabled]="!contactForm.valid"
+    >
+      Enviar
+    </button>
+  </form>
+</section>
