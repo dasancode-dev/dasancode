@@ -3,12 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { FormComponent } from './shared/form/form.component';
-import { WelcomeComponent } from './shared/welcome/welcome.component'; 
+import { WelcomeComponent } from './shared/welcome/welcome.component';
+import { CardsComponent } from "./shared/cards/cards.component"; 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent,WelcomeComponent, FormComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, WelcomeComponent, FormComponent, FooterComponent, CardsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
