@@ -2,9 +2,10 @@
   <h2 class="flex justify-center w-full text-5xl font-bold my-8">
     Contactanos
   </h2>
-  <form
+  <div class="flex w-full items-center">
+    <form
     action=""
-    class="flex flex-col w-1/2 items-start ml-32 gap-4"
+    class="flex flex-col w-1/2 items-center gap-4"
     [formGroup]="contactForm"
     (ngSubmit)="handleSubmit()"
   >
@@ -77,4 +78,6 @@
       Enviar
     </button>
   </form>
+  <img src="contactanos.jpg" alt="contactanos" class="w-auto h-[450px] rounded-lg" />
+  </div>
 </section>
