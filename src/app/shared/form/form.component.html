@@ -5,13 +5,13 @@
   <div class="flex w-full items-center">
     <form
     action=""
-    class="flex flex-col w-1/2 items-end gap-4"
+    class="flex flex-col w-1/2 items-center gap-4"
     [formGroup]="contactForm"
     (ngSubmit)="handleSubmit()"
   >
     <label
       htmlFor="fullName"
-      class="flex flex-col gap-2 w-3/4"
+      class="flex flex-col gap-2 w-10/12"
     >
       Nombre Completo
       <input
@@ -23,7 +23,7 @@
     </label>
     <label
       htmlFor="email"
-      class="flex flex-col gap-2 w-3/4"
+      class="flex flex-col gap-2 w-10/12"
     >
       Correo electrónico
       <input
@@ -35,7 +35,7 @@
     </label>
     <label
       htmlFor="company"
-      class="flex flex-col gap-2 w-3/4"
+      class="flex flex-col gap-2 w-10/12"
     >
       Empresa
       <input
@@ -47,7 +47,7 @@
     </label>
     <label
       htmlFor="services"
-      class="flex flex-col gap-2 w-3/4"
+      class="flex flex-col gap-2 w-10/12"
     >
       ¿Qué servicios buscas?
       <input
@@ -59,7 +59,7 @@
     </label>
     <label
       htmlFor="details"
-      class="flex flex-col gap-2 w-3/4"
+      class="flex flex-col gap-2 w-10/12"
     >
       Mensaje
       <textarea
@@ -72,7 +72,8 @@
       ></textarea>
     </label>
     <button
-      class='flex flex-col justify-center items-center gap-2 w-3/4 bg-purple-600 h-10 rounded-xl px-4 text-white text-semibold'
+      class='flex justify-center items-center gap-2 w-[460px] mr-[155px]
+     bg-purple-600 h-10 rounded-xl text-white text-semibold'
       [disabled]="!contactForm.valid"
     >
       Enviar
