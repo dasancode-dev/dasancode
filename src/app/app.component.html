@@ -1,8 +1,14 @@
 <app-header></app-header>
 <main class="flex flex-col w-full h-auto text-secundary-white">
   <app-welcome></app-welcome>
-  <app-cards typeCard="Why Dasan" idSecctionCard="aboutUs"></app-cards>
-  <app-cards typeCard="Equipo" idSecctionCard="teamDasan"></app-cards>
+  <section id="aboutUs" class="flex flex-col max-w-full mt-4 gap-4">
+    <app-description typeCard="Why Dasan"></app-description>
+    <app-cards></app-cards>
+  </section>
+  <section id="teamDasan" class="flex flex-col max-w-full mt-4 gap-4">
+    <app-description typeCard="Equipo"></app-description>
+    <app-cards></app-cards>
+  </section>
   <app-form></app-form>
   <app-footer></app-footer>
 </main>

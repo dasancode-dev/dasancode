@@ -1,31 +1,5 @@
-<div [id]="idSecctionCard" class="flex flex-col max-w-full mt-4">
-  <!-- Definicón de servicios -->
-  <section class="flex flex-col max-w-full px-4 sm:px-8 md:px-16 lg:px-44">
-    <h3 class="font-bold text-start text-4xl">
-      {{ typeCard }}
-    </h3>
-    <br>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore eligendi deleniti. Atque hic distinctio praesentium facilis modi ad nemo obcaecati, fugit velit officiis adipisci, odit ipsum ducimus quas? Ducimus.
-    </p>
-  </section>
-  <br>
-  <!-- Tipo de servicios -->
-  <section class="max-w-full place-items-center justify-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 sm:px-8 md:px-16 lg:px-44">
-    @for(cardElement of cardList; track cardElement.title){      
-      <div class="max-w-56 sm:max-w-56 md:max-w-80 lg:max-w-80 rounded-lg overflow-hidden shadow-lg bg-primary-purple-light">
-        <img class="h-40 w-full object-cover sm:h-20 md:h-32 lg:h-40" [src]="cardElement.imgPath" [alt]="cardElement.altDescription">
-          <header class="py-2 px-4 sm:py-3 sm:px-6">
-            <h3 class="font-semibold text-lg sm:text-xl md:text-2xl">
-            {{ cardElement.title }}
-            </h3>
-          </header>
-          <div class="px-4 py-2 sm:py-3 sm:px-6">
-            <p class="text-sm md:text-base mb-2">
-              {{cardElement.description}}
-            </p>
-          </div>
-      </div>
-    }
-  </section>  
-</div>
+<section class="max-w-full place-items-center justify-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 sm:px-8 md:px-16 lg:px-44">
+  @for(cardElement of cardList; track cardElement.title){      
+    <app-element-card [element]=cardElement></app-element-card>
+  }
+</section>  

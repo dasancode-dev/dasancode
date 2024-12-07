@@ -1,15 +1,14 @@
 import { Component, Input } from '@angular/core';
-import { CardElement } from './card.model';
+import { CardElement } from './element-card/card.model';
+import { ElementCardComponent } from "./element-card/element-card.component";
 @Component({
   selector: 'app-cards',
   standalone: true,
-  imports: [],
+  imports: [ElementCardComponent],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.css'
 })
 export class CardsComponent {
-  @Input() typeCard = "";
-  @Input() idSecctionCard = "";
   cardList: CardElement[]=[
     {
       title:"Title",
